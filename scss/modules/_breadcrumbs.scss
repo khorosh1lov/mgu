@@ -1,0 +1,21 @@
+.breadcrumbs {
+    >* {
+        color: black;
+        line-height: 60px;
+    }
+    // &+* {
+    //     margin-top: 0px !important;
+    // }
+    display:none;
+    @include breakpoint($breakpoint-medium) {
+        display: block;
+        &+* {
+            margin-top: 24px !important;
+        }
+    }
+    a:after,
+    a:hover:after {
+        content: " - ";
+        color: black;
+    }
+}

@@ -1,0 +1,48 @@
+.teacher{
+    @include breakpoint($breakpoint-medium) {
+        display: table;
+        table-layout:fixed;
+        > * {
+            vertical-align: top;
+            display: table-cell;
+        }
+    }
+    &__image {
+        @include breakpoint($breakpoint-medium) {
+            width: 335px;
+        } 
+        > img {
+            width: 100%;
+            padding-bottom: 40px;
+            @include breakpoint($breakpoint-medium) {
+
+                width: 335px;
+                padding-right: 35px;
+            }
+        }
+    }
+    &__block {
+       margin-top: 50px;
+        > * {
+            padding-left: 20px;
+        }
+    }
+    &__header {
+        border-left: 7px solid $orange-color;
+        padding-left: 13px;
+        color: $orange-color;
+    }
+    &__name {
+        color: black;
+        font-size: 18px;
+        font-weight: bolder;
+        margin-bottom: 8px;
+    }
+    &__block-header {
+        padding-left: 13px;
+
+        font-weight:bolder;
+        border-left: 7px solid $orange-color;
+        margin-bottom: 16px;
+    }
+}

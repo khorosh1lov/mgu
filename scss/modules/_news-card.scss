@@ -1,0 +1,30 @@
+
+.news-card {
+    position: relative;
+
+    width: 100%;
+    font-size: 1rem;
+    &__link {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    &__date {
+        margin-top: 32px;
+        color: $orange-color;
+        font-size: 22px;
+        font-weight: bolder;
+    }
+    &__topic {
+        margin-top: 16px;
+        font-weight: bolder;
+    }
+    &__image {
+        background-position: center;
+        height: 240px;
+        background-size: cover;
+
+    }
+}

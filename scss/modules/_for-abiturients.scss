@@ -1,0 +1,355 @@
+.for-abiturients {
+    font-size: 20px;
+    @include breakpoint(321px) {
+        font-size: 22px;
+
+    }
+    @include breakpoint($breakpoint-small) {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    &__specialties-header {
+        padding: 12px 0;
+        @include breakpoint($breakpoint-medium) {
+            padding: 12px 24px;
+            font-size: 32px;
+        }
+        @include breakpoint(1180px) {
+            font-size: 40px;
+        }
+        text-transform: uppercase;
+    }
+    &__specialties {
+        a {
+            color: white;
+            transition: border-color 0.15s ease-in-out; //border-bottom: 1px solid $orange-color;
+            padding: 24px 0;
+            @include breakpoint($breakpoint-medium) {
+                padding: 12px 24px;
+            }
+            display: block;
+        }
+        a:hover {
+            //border-bottom: 1px solid white;
+            text-decoration: underline;
+        }
+        background-color: $orange-color;
+        padding:32px;
+        @include breakpoint($breakpoint-medium) {
+            padding: 44px;
+        }
+    }
+    &__advantages-header {
+        text-transform: uppercase;
+        background-color: $orange-color;
+        padding: 20px 0;
+        text-align: center;
+        width: 100%;
+        font-size: 26px;
+        @include breakpoint($breakpoint-medium) {
+            padding: 20px 100px;
+            text-align: left;
+            height: 88px;
+        }
+        @include breakpoint($breakpoint-extra-small) {
+            font-size: 40px;
+        }
+        color: white;
+    }
+    &__advantage {
+        display: table;
+        table-layout: fixed;
+        >* {
+            display: table-cell;
+            vertical-align: top;
+        }
+        line-height: 1.45;
+        margin-top: 0px;
+        @include breakpoint($breakpoint-medium) {
+            margin-top: 128px;
+        }
+        *+& {
+            margin-top: 80px;
+        }
+        font-size: 22px;
+        @include breakpoint($breakpoint-small) {
+            font-size: 24px;
+        }
+        @include breakpoint(1180px) {
+            font-size: 24px;
+        }
+    }
+    &__advantages-header+&__advantage {
+        margin-top: 40px;
+    }
+    &__header {
+        font-size: 32px;
+        @include breakpoint($breakpoint-small) {
+            font-size: 48px;
+        }
+        @include breakpoint($breakpoint-medium) {
+            font-size: 64px;
+        }
+        font-weight: bolder;
+        padding-bottom: 32px;
+    }
+    &__info {
+        padding: 32px;
+        font-weight: normal;
+        @include breakpoint($breakpoint-medium) {
+            padding: 50px 0;
+            width: 100%;
+            >* {
+                max-width: 420px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        background-color: #e9c7a9;
+        font-size: 1rem;
+    }
+    &__price {
+        @include breakpoint($breakpoint-medium) {
+            padding: 50px 0;
+            width: 100%;
+            >* {
+                max-width: 450px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        font-size: 22px;
+        font-weight: bolder;
+        line-height: 1.5;
+    }
+    &__control-numbers {
+        &-table {
+            overflow-x: auto;
+            overflow-y: hidden;
+            margin-left: auto;
+            margin-right: auto;
+            @include breakpoint(1136px - 44px) {
+                min-width: auto;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 1136px - 44px;
+                width: 100%;
+            }
+        }
+        font-weight: bolder;
+        font-size: 22px;
+        div {
+            min-width: 100%;
+            @include breakpoint(1136px - 44px) {
+                min-width: auto;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 1136px - 44px;
+                width: 100%;
+            }
+        }
+        table {
+            text-align: left;
+            margin-left: -20px;
+            margin-right: -20px;
+            min-width: 100%;
+     
+            table-layout: fixed;
+            border-spacing: 20px;
+        }
+        th {
+            text-align: left;
+        }
+    }
+    &__advantage-number {
+        font-size: 3rem;
+        line-height: 2.6rem;
+        width: 40px;
+        &+* {
+            padding-left: 16px;
+            @include breakpoint($breakpoint-small) {
+                padding-left: 50px;
+            }
+        }
+        @include breakpoint($breakpoint-small) {
+            line-height: 105px;
+            font-size: 120px;
+            width: 85px;
+        }
+        color: $orange-color;
+        text-align: center;
+    }
+    &__price-table {
+        margin-top: 24px;
+        table-layout: fixed;
+        display: table;
+        width: 100%;
+        max-width: 420px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        @include breakpoint($breakpoint-extra-small) {
+            text-align: left;
+        }
+        >* {
+            display: table-cell;
+            vertical-align: top;
+        }
+    }
+    &__price-number {
+        line-height: 44px;
+        font-size: 44px;
+    }
+    &__document-acception-info {
+        color: white;
+        background-color: #f39b13;
+    }
+    &__bakalavriat-requirements {
+        font-size: 18px;
+        @include breakpoint($breakpoint-medium) {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1136px - 44px;
+        }
+    }
+    &__document-acception-info-content {
+        padding-left: 32px;
+        padding-right: 32px;
+        @include breakpoint($breakpoint-medium) {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1136px - 44px + 32px + 32px;
+        }
+        display: table;
+        table-layout: fixed;
+        >* {
+            display: table-cell;
+            vertical-align: top;
+        }
+        padding-top: 60px;
+        padding-bottom: 60px;
+        a {
+            font-weight: normal;
+            color: black;
+            text-decoration: underline;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+    }
+    &__entry-trials {
+        background-color: #e9c7a9;
+    }
+    &__entry-trials-content {
+        h1 {
+            font-size: 26px;
+            @include breakpoint($breakpoint-extra-small) {
+                font-size: 30px;
+            }
+
+        }
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-left: 32px;
+        padding-right: 32px;
+        font-weight: normal;
+        font-size: 22px;
+        @include breakpoint($breakpoint-medium) {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1136px - 44px + 32px + 32px;
+        }
+    }
+    &__tests-dates {
+        width: 100%;
+        background-color: #da993b;
+    }
+    &__tests-dates-container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-left: 32px;
+        padding-right: 32px;
+        font-weight: normal;
+        font-size: 20px;
+        @include breakpoint($breakpoint-medium) {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1136px - 44px + 32px + 32px;
+        }
+    }
+    &__tests-date {
+        display: table;
+        table-layout: fixed;
+        >* {
+            display: table-cell;
+            vertical-align: top;
+        }
+        font-weight: bolder;
+        font-size: 22px;
+    }
+    &__tests-date-image {
+        display: none;
+        @include breakpoint($breakpoint-medium) {
+            display: table-cell;
+        }
+        &+* {
+            @include breakpoint($breakpoint-medium) {
+                padding-left: 30px;
+            }
+            @include breakpoint(1180px) {
+                padding-left: 50px;
+            }
+        }
+    }
+    &__document-acception-info-image {
+        display: none;
+        @include breakpoint($breakpoint-medium) {
+            display: table-cell;
+        }
+    }
+    &__price-image {
+        width: 237px;
+        display: none;
+        @include breakpoint($breakpoint-extra-small) {
+            display: table-cell;
+        }
+    }
+    &__footer {
+        background-color: #e9c7a9;
+        font-size: 1rem;
+        font-weight: bolder;
+        padding: 32px;
+        a {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            font-size: 22px;
+            @include breakpoint($breakpoint-medium) {
+                font-size: 1rem;
+                padding: 0;
+            }
+            display:block;
+            color: black;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+    &__footer-container {
+        @include breakpoint($breakpoint-medium) {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1136px - 44px;
+            font-size: 1rem;
+        }
+    }
+    &__dues {
+        @include breakpoint($breakpoint-medium) {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1136px - 44px;
+            font-size: 1rem;
+        }
+    }
+}

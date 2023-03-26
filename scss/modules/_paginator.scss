@@ -1,0 +1,63 @@
+.paginator {
+    margin-left: 0px;
+    padding-left: 0px;
+    font-size: 0px;
+    list-style: none;
+    margin-top: 64px;
+    
+    &__item {
+        display: none;
+        @include breakpoint($breakpoint-medium) {
+            display: inline-block;
+        }
+        font-size: 1rem;
+        >* {
+            display: block;
+            padding-left: 6px;
+            padding-right: 6px;
+            min-width: 16px;
+            transition: color .15s ease-in-out;
+            color: black;
+        }
+        &:hover>a,
+        &:focus>a {
+            cursor: pointer;
+            color: $blue-color;
+        }
+        &--selected>a,
+        &--selected:hover>a {
+            cursor: default;
+            font-weight: bolder;
+            color: $orange-color;
+        }
+    }
+    &__mobile-item {
+        font-size: 1rem;
+
+        display: inline-block;
+        @include breakpoint($breakpoint-medium) {
+            display:none;
+        }
+        >* {
+            display: block;
+            padding-left: 16px;
+            padding-right: 16px;
+            min-width: 16px;
+            transition: color .15s ease-in-out;
+            color: black;
+            line-height: 48px;
+        }
+        > span {
+            margin-left:-1px;
+            margin-right:-1px;
+            line-height: 46px;
+
+            border: 1px solid $orange-color;
+        }
+        > a {
+            border-radius:2px;
+            color: white;
+            background: $orange-color;
+        }
+    }
+}

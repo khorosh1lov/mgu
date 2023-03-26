@@ -1,0 +1,31 @@
+.file-downloads{
+    margin-bottom:-20px;
+    &__item > * {
+        display: inline-block;
+        vertical-align: middle;
+
+    }
+    font-size: 0px;
+    &__item {
+        margin-bottom: 20px;
+        display: inline-block;
+        width: 100%;
+        @include breakpoint($breakpoint-small) {
+            width: 50%;
+        }
+        color: black;
+        &:hover {
+            color: black;
+            cursor: pointer;
+        }
+    }
+    &__item-body{ 
+        margin-left: 16px;
+        line-height: 26px;
+        font-size: 1rem;
+    }
+    &__item-link {
+        color: $orange-color;
+        text-decoration: underline;
+    }
+}

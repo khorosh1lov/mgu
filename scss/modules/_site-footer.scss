@@ -1,0 +1,138 @@
+.site-footer {
+    background-color: $blue-color;
+    &__container {
+        color: white;
+        padding-top: 24px;
+        max-width: $content-width;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        vertical-align: top;
+        font-size: 0px;
+        >* {
+            vertical-align: top;
+            font-size: 1rem;
+        }
+    }
+    &__phone-and-text {
+        font-size: 22px;
+    }
+    &__router {
+        font-size: 0px;
+        >* {
+            font-size: 16px;
+            line-height: 1;
+            @include breakpoint($breakpoint-medium) {
+                margin-right: 20px;
+            }
+        }
+        a {
+            color: white;
+            transition: color .15s ease-in-out;
+            text-transform: uppercase;
+            line-height: 60px;
+            font-weight: bolder;
+            display: inline-block;
+            width: 100%;
+            @include breakpoint($breakpoint-medium) {
+                line-height: 48px;
+                width: auto
+            }
+        }
+        a:hover,
+        a:focus {
+            color: #2db1f6;
+            cursor: pointer;
+        }
+    }
+    &__footer {
+        padding-bottom: 24px;
+        position: relative;
+        min-height: 64px;
+        @include breakpoint($breakpoint-medium) {
+            margin-top: 16px;
+            text-align: right;
+            min-height: 80px;
+        }
+    }
+    &__footer-buttons {
+        @include breakpoint($breakpoint-medium) {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+        }
+    }
+    &__footer-button {
+        display: inline-block;
+        height: 100%;
+        line-height: 60px;
+        text-decoration: underline; //font-weight: bolder;
+        color: white;
+        width: 100%;
+        background-color: $blue-color;
+        transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+        @include breakpoint($breakpoint-medium) {
+            width: auto;
+            padding-left: 26px;
+            padding-right: 26px;
+            &+& {
+                margin-left: 100px;
+            }
+        }
+        &:hover,
+        &:focus {
+            color: #2db1f6;
+        }
+        &--active {
+            color: white;
+            @include breakpoint($breakpoint-medium) {
+                background-color: $orange-color;
+            }
+            &:hover,
+            &:focus {
+                color: white;
+            }
+        }
+    }
+    &__social-buttons {
+        font-size: 0px;
+        text-align: right;
+        width: 100%;
+        >*+* {
+            margin-left: 10px;
+        }
+        >* {
+            height: 40px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        @include breakpoint($breakpoint-medium) {
+            width: auto;
+        } //@include breakpoint($breakpoint-medium) {
+        padding-top: 16px; //}
+    }
+    &__left {
+        font-size: 16px;
+        >*+* {
+            margin-top: 4px;
+        }
+        padding-bottom: 24px;
+    }
+    &__left-header {
+        font-weight: bolder;
+        font-size: 22px;
+    }
+    @include breakpoint($breakpoint-medium) {
+        &__left {
+            width: 24%;
+            display: inline-block; //padding-bottom: 24px;
+        }
+        &__right {
+            padding-left: 20px;
+            width: 76%;
+            display: inline-block;
+        }
+    }
+}

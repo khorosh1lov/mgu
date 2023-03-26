@@ -1,0 +1,164 @@
+$overflow-height: 56px;
+$image-size: 162px;
+.teacher-card {
+    display: block;
+    &+& {
+        margin-top: 50px;
+    }
+    @include breakpoint($breakpoint-medium) {
+        padding-top: $overflow-height;
+        display: table;
+        table-layout: fixed;
+        >* {
+            display: table-cell;
+            vertical-align: top;
+        }
+    }
+    &__header {
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: bolder;
+        &+* {
+            margin-top: 24px;
+        }
+    }
+    &__text {
+        font-weight: normal;
+        @include breakpoint($breakpoint-medium) {
+            padding-bottom: 200px;
+        }
+        @include breakpoint(1164px) {
+            padding-bottom: 60px;
+        }
+    }
+    &__buttons {
+        @include clearfix;
+        @include breakpoint($breakpoint-medium) {
+            position: absolute;
+            bottom: 0;
+            left: 20px;
+            right: 0;
+        }
+    }
+    &__buttons-left {
+        margin-top: 16px;
+        @include breakpoint(1164px) {
+            margin-top: 0;
+            float: left;
+        }
+    }
+    &__left {
+        position: relative;
+        @include breakpoint($breakpoint-medium) {
+            width: 32%;
+        }
+    }
+    &__image {
+        border-radius: 50%;
+        border: 4px solid white;
+        height: $image-size;
+        width: $image-size;
+        margin: auto;
+        display: block;
+    }
+    &__name {
+        font-size: 22px;
+        padding-top: 20px;
+        @include breakpoint($breakpoint-medium) {
+            padding-top: 0px;
+        }
+        &+div {
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 2px solid white;
+        }
+    }
+    &__left-content {
+        position: relative;
+        background: #a2c3cc;
+        border-radius: 11px;
+        font-size: 18px;
+        font-weight: bolder;
+        padding: 20px;
+        @include breakpoint($breakpoint-medium) {
+            padding-top: 120px;
+        }
+    }
+    &--special &__left-content {
+        background: #add19a;
+    }
+    &__image-container {
+        @include breakpoint($breakpoint-medium) {
+            padding-top: 0px;
+            position: absolute;
+            top: -$overflow-height;
+            left: 0;
+            right: 0;
+            z-index: 2;
+        }
+    }
+    &__info-button {
+        background-color: $orange-color;
+        color: white;
+        border-radius: 13px;
+        text-transform: uppercase;
+        font-weight: bolder;
+        line-height: 56px;
+        padding: 0 10px;
+        font-size: 22px;
+        width: 100%;
+        @include breakpoint(1164px) {
+            padding: 0 32px;
+
+            line-height: 36px;
+            display: inline-block;
+            width: auto;
+        }
+        border: 2px solid $orange-color;
+        &:hover,
+        &:active {
+            background-color: white;
+            color: $orange-color;
+            cursor: pointer;
+        }
+    }
+    &__button {
+        color: $orange-color;
+        text-transform: uppercase;
+        font-size: 22px;
+        width: 100%;
+        line-height: 60px;
+        &+& {
+            // margin-top: 16px;
+            @include breakpoint(1164px) {
+                margin-top: 0;
+                margin-left: 16px;
+            }
+        }
+        @include breakpoint(1164px) {
+            line-height: 40px;
+            display: inline-block;
+            width: auto;
+        }
+        font-weight: bolder;
+        &:hover,
+        &:active {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+    &__right {
+        position: relative;
+        padding-top: 20px;
+        @include breakpoint($breakpoint-medium) {
+            padding-top: 0px;
+            padding-left: 20px;
+            width: 68%;
+        }
+    }
+    &__buttons-right {
+        @include breakpoint(1164px) {
+            float: right;
+        }
+    }
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>Новость</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+    <div class="site-header site-header--media">
+        <div class="site-header__media">
+            <video class="page__video" loop="loop" autoplay="autoplay" muted="muted" preload="preload">
+                <source src="./img/ftv_site.m4v">
+            </video>
+        </div>
+
+        <div class="site-header__container">
+            <div class="site-header__text-with-logo">
+                <div class="site-header__logo">
+                    <img src="./img/mgulogo4.png">
+                </div>
+                <div>
+                    <div class="site-header__text">
+                        <div style="width: 60px;">
+                            <div class="site-header__menu"></div>
+                        </div>
+
+                        <div>
+                            <div>Высшая школа (факультет) телевидения МГУ им. М. В. Ломоносова</div>
+                            <div class="site-header__slogan">Мы сделаем телевидение лучше!</div>
+                        </div>
+
+                    </div>
+
+
+                    <nav class="site-header__router">
+                        <span class="site-header__router-mobile">Меню</span>
+                        <a href="#">О факультете</a>
+                        <a href="#">Абитуриентам</a>
+                        <a href="#">Студентам</a>
+                        <a href="#">Контакты</a>
+                        <a href="#">Дополнительное образование</a>
+
+                    </nav>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="site-header__10year-text">
+            Нам 10 лет!
+        </div>
+        <div class="site-header__tiles">
+            <a class="site-header__tile">
+                <div class="site-header__tile-icon">
+                    <div class="icon icon--preparatory-courses"></div>
+                </div>
+                <div class="site-header__tile-text site-header__text--first">Подготовительные курсы</div>
+            </a>
+            <a class="site-header__tile">
+                <div class="site-header__tile-icon">
+                    <div class="icon icon--baccalaureate"></div>
+                </div>
+                <div class="site-header__tile-text ">Бакалавриат</div>
+            </a>
+            <a class="site-header__tile">
+                <div class="site-header__tile-icon">
+                    <div class="icon icon--magistracy"></div>
+                </div>
+                <div class="site-header__tile-text ">Магистратура</div>
+            </a>
+            <a class="site-header__tile">
+                <div class="site-header__tile-icon">
+                    <div class="icon icon--graduates"></div>
+                </div>
+                <div class="site-header__tile-text ">Выпускники</div>
+            </a>
+            <a class="site-header__tile">
+                <div class="site-header__tile-icon">
+                    <div class="icon icon--teachers"></div>
+                </div>
+                <div class="site-header__tile-text ">Преподаватели</div>
+            </a>
+            <a class="site-header__tile">
+                <div class="site-header__tile-icon">
+                    <div class="icon icon--scientific-life"></div>
+                </div>
+                <div class="site-header__tile-text ">Научная жизнь</div>
+            </a>
+            <a class="site-header__tile">
+                <div class="site-header__tile-icon">
+                    <div class="icon icon--beam-tv"></div>
+                </div>
+                <div class="site-header__tile-text ">Луч ТВ</div>
+            </a>
+            <a class="site-header__tile">
+                <div class="site-header__tile-icon">
+                    <div class="icon icon--master-classes"></div>
+                </div>
+                <div class="site-header__tile-text ">Мастер классы</div>
+            </a>
+            <a class="site-header__tile">
+                <div class="site-header__tile-icon">
+                    <div class="icon icon--publications"></div>
+                </div>
+                <div class="site-header__tile-text ">Публикации</div>
+            </a>
+            <a class="site-header__tile">
+                <div class="site-header__tile-icon">
+                    <div class="icon icon--photogallery"></div>
+                </div>
+                <div class="site-header__tile-text ">Фотогалерея</div>
+            </a>
+            <a class="site-header__tile">
+                <div class="site-header__tile-icon">
+                    <div class="icon icon--video-library"></div>
+                </div>
+                <div class="site-header__tile-text ">Видеотека</div>
+            </a>
+            <a class="site-header__tile">
+                <div class="site-header__tile-icon">
+                    <div class="icon icon--young-tv"></div>
+                </div>
+                <div class="site-header__tile-text ">Юн ТВ</div>
+            </a>
+
+
+        </div>
+        <div class="site-header__buttons">
+
+            <a class="site-header__practice-button">Практика на телеканалах</a>
+            <a class="site-header__questions-button">Вопрос-ответ</a>
+        </div>
+        <div class="site-header__arrow-down">
+            <a href="#site-content" class="icon icon--bottom"></a>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded",
+            function () {
+                var header = document.getElementsByClassName("site-header")[0];
+                var menubutton = header.getElementsByClassName("site-header__menu")[0];
+
+                function toggleMenu(header) {
+                    if (header.classList.contains("site-header--mobile-shown")) {
+                        header.classList.remove("site-header--mobile-shown");
+                    } else {
+                        header.classList.add("site-header--mobile-shown");
+
+                    }
+                }
+                menubutton.onclick = toggleMenu.bind(null, header);
+
+
+            })
+    </script>
+    <div class="site-content" id="site-content">
+        <h1>НОВОСТИ И СОБЫТИЯ</h1>
+        <div class="grid grid--news-cards">
+            <div class="col col--3-of-12">
+                <div class="news-card">
+                    <a class="news-card__link" href=#></a>
+
+                    <div class="news-card__image" style="background-image: url('./img/evrovizhn.jpg');">
+
+                    </div>
+                    <div class="news-card__date">7.05.2018г</div>
+                    <div class="news-card__topic">It is a long established fact that a reader will be distracted by the readable content of a page when
+                        looking at its layout.</div>
+
+                </div>
+            </div>
+            <div class="col col--3-of-12">
+                <div class="news-card">
+                    <a class="news-card__link" href=#></a>
+
+                    <div class="news-card__image" style="background-image: url('./img/evrovizhn.jpg');">
+
+                    </div>
+                    <div class="news-card__date">7.05.2018г</div>
+                    <div class="news-card__topic">It is a long established fact that a reader will be distracted by the readable content of a page when
+                        looking at its layout.</div>
+
+                </div>
+            </div>
+            <div class="col col--3-of-12">
+                <div class="news-card">
+                    <a class="news-card__link" href=#></a>
+
+                    <div class="news-card__image" style="background-image: url('./img/evrovizhn.jpg');">
+
+                    </div>
+                    <div class="news-card__date">7.05.2018г</div>
+                    <div class="news-card__topic">It is a long established fact that a reader will be distracted by the readable content of a page when
+                        looking at its layout.</div>
+
+                </div>
+            </div>
+            <div class="col col--3-of-12">
+                <div class="news-card">
+                    <a class="news-card__link" href=#></a>
+
+                    <div class="news-card__image" style="background-image: url('./img/evrovizhn.jpg');">
+
+                    </div>
+                    <div class="news-card__date">7.05.2018г</div>
+                    <div class="news-card__topic">It is a long established fact that a reader will be distracted by the readable content of a page when
+                        looking at its layout.</div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="main-page-button">
+            <button type="button">ВСЕ СОБЫТИЯ</button>
+        </div>
+        <h1>СЛОВО ДЕКАНА</h1>
+        <div class="dean-words">
+            <img class="dean-words__image" src='./img/dean-full.png'></img>
+            <div class="dean-words__content">
+                <div class="dean-words__date"> 7.05.2018г</div>
+                <div class="dean-words__title">Всем студентам и сотрудникам ВШТ МГУ!</div>
+                <div> Сообщаю о графике основных мероприятий, посвящённых 10-летию Высшей школы телевидения МГУ. Середина сентября:
+                    Конкурс на право ведения новостных выпусков сетевого телеканала Луч.ТВ. Луч.ТВ потребуется 6 пар ведущих.
+                    Конкурс пройдёт в два тура. Первый тур заочный. Претенденты должны самостоятельно записать в учебной
+                    студии видеоролики (хронометраж – 15 минут), в которых они продемонстрируют своё умение вести новостные
+                    передачи. Подбор материала – свободный. В каждом ролике должны содержаться не менее 3-х видеосюжетов.
+                    Темы видеосюжетов произвольные, не обязательно снятые самими ведущими.
+                </div>
+                <div class="dean-words__buttons">
+                    <a class="dean-words__button">Подробнее</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="site-footer">
+        <div class="site-footer__container">
+            <div class="site-footer__left">
+                <div class="site-footer__left-header">ЕСТЬ ВОПРОСЫ? </div>
+                <div>Вы можете задать их по телефону </div>
+                <div class="site-footer__phone-and-text">8 495 939-44-61 </div>
+                <div class="site-footer__phone-and-text">8 495 939-37-49 </div>
+                <div>Электронной почте </div>
+                <div class="site-footer__phone-and-text">hstv@bk.ru</div>
+            </div>
+            <div class="site-footer__right">
+                <nav class="site-footer__router">
+                    <a href="#">О факультете</a>
+                    <a href="#">Попечительский совет</a>
+                    <a href="#">Студентам</a>
+                    <a href="#">Преподавателям</a>
+                    <a href="#">Абитуриентам</a>
+                    <a href="#">Дополнительное образование</a>
+                    <a href="#">УМС "Телевидение"</a>
+                    <a href="#">Луч ТВ</a>
+                    <a href="#">Видеогалерея</a>
+                    <a href="#">Проекты</a>
+                </nav>
+                <div class="site-footer__footer">
+                    <div class="site-footer__footer-buttons">
+
+                        <a class="site-footer__footer-button site-footer__footer-button--active" href="#">Личный кабинет</a>
+                        <a class="site-footer__footer-button" href="#">Карта сайта</a>
+                    </div>
+                    <div class="site-footer__social-buttons">
+                        <a class="site-footer__social-button" href=#>
+                            <img src="./img/vk.png">
+                        </a>
+                        <a class="site-footer__social-button" href=#>
+                            <img src="./img/instagram.png">
+                        </a>
+                        <a class="site-footer__social-button" href=#>
+                            <img src="./img/facebook.png">
+                        </a>
+                        <a class="site-footer__social-button" href=#>
+                            <img src="./img/youtube.png">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

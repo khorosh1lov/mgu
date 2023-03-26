@@ -1,0 +1,69 @@
+.dean-words {
+    @include breakpoint($breakpoint-medium) {
+        display: table;
+        table-layout: fixed;
+        >* {
+            display: table-cell;
+            vertical-align: top;
+        }
+    }
+    &__image {
+        width: 100%;
+        @include breakpoint($breakpoint-medium) {
+            padding-right: 36px;
+            width: 436px;
+        }
+    }
+    &__content {
+        margin-top: 32px;
+        @include breakpoint($breakpoint-medium) {
+            margin-top: 0px;
+        }
+        // >*+* {
+        //     margin-top: 16px;
+        // }
+    }
+    &__date {
+        color: $orange-color;
+        font-weight: bolder;
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+    &__title {
+        font-weight: bolder;
+        font-size: 18px;
+        margin-bottom: 24px;
+
+    }
+    &__buttons {
+        padding-top: 50px;
+        text-align:center;
+        @include breakpoint($breakpoint-medium) {
+
+        text-align: right;
+        }
+    }
+    &__button {
+        width: 100%;
+        line-height: 46px;
+        display: inline-block;
+        font-weight: bolder;
+        text-transform: uppercase;
+        font-size: 18px;
+        padding: 0 12px;
+
+        @include breakpoint($breakpoint-medium) {
+            width: auto;
+            line-height: 46px;
+            padding: 0 80px;
+
+        }
+        border-radius: 11px;
+        border: 2px solid $orange-color;
+        &:hover {
+            background-color: $orange-color;
+            color: white;
+            cursor: pointer
+        }
+    }
+}

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>Новость</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+    <div class="site-header">
+        <div class="site-header__container">
+            <div class="site-header__text-with-logo">
+                <div class="site-header__logo">
+                    <img src="./img/mgulogo4.png">
+                </div>
+                <div>
+                    <div class="site-header__text">
+                        <div style="width: 60px;">
+                            <div class="site-header__menu"></div>
+                        </div>
+
+                        <div>
+                            <div>Высшая школа (факультет) телевидения МГУ им. М. В. Ломоносова</div>
+                            <div class="site-header__slogan">Мы сделаем телевидение лучше!</div>
+                        </div>
+
+                    </div>
+
+
+                    <nav class="site-header__router">
+                        <span class="site-header__router-mobile">Меню</span>
+                        <a href="#">О факультете</a>
+                        <a href="#">Абитуриентам</a>
+                        <a href="#">Студентам</a>
+                        <a href="#">Контакты</a>
+                        <a href="#">Дополнительное образование</a>
+
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded",
+            function () {
+                var header = document.getElementsByClassName("site-header")[0];
+                var menubutton = header.getElementsByClassName("site-header__menu")[0];
+
+                function toggleMenu(header) {
+                    if (header.classList.contains("site-header--mobile-shown")) {
+                        header.classList.remove("site-header--mobile-shown");
+                    } else {
+                        header.classList.add("site-header--mobile-shown");
+
+                    }
+                }
+                menubutton.onclick = toggleMenu.bind(null, header);
+
+
+            })
+    </script>
+    <div class="site-content">
+        <div class="content-with-list-router">
+            <div class="content-with-list-router__router">
+                <select class="list-mobile-router">
+                    <option value=1>Подготовительные курсы</option>
+                    <option value=2>Бакалавриат</option>
+                    <option value=3>Магистратура</option>
+                    <option value=4 selected>Новости</option>
+                    <option value=5>Новости</option>
+                    <option value=6>Научная жизнь</option>
+                    <option value=7>Научная жизнь</option>
+                </select>
+                <nav class="list-router">
+                    <a class="list-router__item" href="#">
+                        <span>Подготовительные курсы</span>
+                    </a>
+                    <a class="list-router__item" href="#">
+                        <span>Бакалавриат</span>
+                    </a>
+                    <a class="list-router__item" href="#">
+                        <span>Магистратура</span>
+                    </a>
+                    <a class="list-router__item" href="#">
+                        <span>Выпускники</span>
+                    </a>
+                    <a class="list-router__item list-router__item--active" href="#">
+                        <span>Новости</span>
+                    </a>
+                    <a class="list-router__item" href="#">
+                        <span>Научная жизнь</span>
+                    </a>
+                    <a class="list-router__item" href="#">
+                        <span>Научная жизнь</span>
+                    </a>
+                    <a class="list-router__item" href="#">
+                        <span>Публикации</span>
+                    </a>
+                    <a class="list-router__item" href="#">
+                        <span>Фотогалерея</span>
+                    </a>
+                    <a class="list-router__item" href="#">
+                        <span>Видеотека</span>
+                    </a>
+                    <a class="list-router__item" href="#">
+                        <span>Юн ТВ</span>
+                    </a>
+                    <a class="list-router__item" href="#">
+                        <span>Луч ТВ</span>
+                    </a>
+
+                </nav>
+            </div>
+            <div>
+                <nav class="breadcrumbs">
+                    <a href="#">Главная</a>
+                    <span>Новости</span>
+
+                </nav>
+                <h1>Новости</h1>
+                <div class="news-article">
+                    <img class="news-article__image" src="./img/evrovizhn.jpg">
+                    <h1>Победительницу Евровидения-2018 заподозрили в плагиате</h1>
+                    <div class="news-article__subheader">
+                        <div class="news-article__subheader-left">
+                            <div class="news-article__date">7.05.2018г</div>
+                            <b>Риа новости</b>
+                        </div>
+                        <div class="news-article__subheader-right">
+                            <div class="news-article__share">
+                                <div class="news-article__share-label">Поделиться</div>
+                                <div class="news-article__share-buttons">
+                                    <a href=#>
+                                        <img src="./img/vk-small.png">
+                                    </a>
+                                    <a href=#>
+                                        <img src="./img/instagram-small.png">
+                                    </a>
+                                    <a href=#>
+                                        <img src="./img/facebook-small.png">
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-article__body">
+                        <h4>What is Lorem Ipsum?</h4>
+                        <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                            type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                            but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+                            in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                        <h4> Why do we use it?
+                        </h4>
+                        <div>
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                            as opposed to using 'Content here, content here', making it look like readable English. Many
+                            desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
+                            and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions
+                            have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and
+                            the like).
+                        </div>
+                        <h4>Прикреплённые материалы</h4>
+                        <div class="file-downloads">
+                            <a href=# class=file-downloads__item>
+                                <img src="./img/download.png">
+                                <div class="file-downloads__item-body">
+                                    <div>Название файла</div>
+                                    <div>103 Кб</div>
+                                    <div class="file-downloads__item-link">Скачать</div>
+                                </div>
+                            </a>
+                            <a href=# class=file-downloads__item>
+                                <img src="./img/download.png">
+                                <div class="file-downloads__item-body">
+                                    <div>Название файла</div>
+                                    <div>103 Кб</div>
+                                    <div class="file-downloads__item-link">Скачать</div>
+                                </div>
+                            </a>
+                            <a href=# class=file-downloads__item>
+                                <img src="./img/download.png">
+                                <div class="file-downloads__item-body">
+                                    <div>Название файла</div>
+                                    <div>103 Кб</div>
+                                    <div class="file-downloads__item-link">Скачать</div>
+                                </div>
+                            </a>
+                            <a href=# class=file-downloads__item>
+                                <img src="./img/download.png">
+                                <div class="file-downloads__item-body">
+                                    <div>Название файла</div>
+                                    <div>103 Кб</div>
+                                    <div class="file-downloads__item-link">Скачать</div>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="news-article__similars grid grid--news-cards">
+                            <div class="col col--4-of-12">
+                                <div class="news-card">
+                                    <a class="news-card__link" href=#></a>
+
+                                    <div class="news-card__image" style="background-image: url('./img/evrovizhn.jpg');">
+
+                                    </div>
+                                    <div class="news-card__date">7.05.2018г</div>
+                                    <div class="news-card__topic">It is a long established fact that a reader will be distracted by the readable content
+                                        of a page when looking at its layout.</div>
+
+                                </div>
+                            </div>
+                            <div class="col col--4-of-12">
+
+                                <div class="news-card">
+                                    <a class="news-card__link" href=#></a>
+
+                                    <div class="news-card__image" style="background-image: url('./img/evrovizhn.jpg');">
+
+                                    </div>
+                                    <div class="news-card__date">7.05.2018г</div>
+                                    <div class="news-card__topic">It is a long established fact that a reader will be distracted by the readable content
+                                        of a page when looking at its layout.</div>
+
+                                </div>
+                            </div>
+                            <div class="col col--4-of-12">
+                                <div class="news-card">
+                                    <a class="news-card__link" href=#></a>
+
+                                    <div class="news-card__image" style="background-image: url('./img/evrovizhn.jpg');">
+
+                                    </div>
+                                    <div class="news-card__date">7.05.2018г</div>
+                                    <div class="news-card__topic">It is a long established fact that a reader will be distracted by the readable content
+                                        of a page when looking at its layout.</div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="site-footer">
+        <div class="site-footer__container">
+            <div class="site-footer__left">
+                <div class="site-footer__left-header">ЕСТЬ ВОПРОСЫ? </div>
+                <div>Вы можете задать их по телефону </div>
+                <div class="site-footer__phone-and-text">8 495 939-44-61 </div>
+                <div class="site-footer__phone-and-text">8 495 939-37-49 </div>
+                <div>Электронной почте </div>
+                <div class="site-footer__phone-and-text">hstv@bk.ru</div>
+            </div>
+            <div class="site-footer__right">
+                <nav class="site-footer__router">
+                    <a href="#">О факультете</a>
+                    <a href="#">Попечительский совет</a>
+                    <a href="#">Студентам</a>
+                    <a href="#">Преподавателям</a>
+                    <a href="#">Абитуриентам</a>
+                    <a href="#">Дополнительное образование</a>
+                    <a href="#">УМС "Телевидение"</a>
+                    <a href="#">Луч ТВ</a>
+                    <a href="#">Видеогалерея</a>
+                    <a href="#">Проекты</a>
+                </nav>
+                <div class="site-footer__footer">
+                    <div class="site-footer__footer-buttons">
+
+                        <a class="site-footer__footer-button site-footer__footer-button--active" href="#">Личный кабинет</a>
+                        <a class="site-footer__footer-button" href="#">Карта сайта</a>
+                    </div>
+                    <div class="site-footer__social-buttons">
+                        <a class="site-footer__social-button" href=#>
+                            <img src="./img/vk.png">
+                        </a>
+                        <a class="site-footer__social-button" href=#>
+                            <img src="./img/instagram.png">
+                        </a>
+                        <a class="site-footer__social-button" href=#>
+                            <img src="./img/facebook.png">
+                        </a>
+                        <a class="site-footer__social-button" href=#>
+                            <img src="./img/youtube.png">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

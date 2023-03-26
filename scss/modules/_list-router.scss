@@ -1,0 +1,43 @@
+.list-router {
+    display: none;
+
+    @include breakpoint($breakpoint-medium) {
+        display: inline-block;
+
+    }
+    &__item {
+        min-height: 60px;
+        >* {
+            padding-top: 19px;
+            padding-bottom: 19px;
+            font-size: 22px;
+            display: block;
+        }
+        width: 100%;
+        color: black;
+        display: block;
+        border-left: 14px solid white;
+        transition: background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out;
+        &:hover {
+            cursor: pointer;
+            background-color: #d4dae7;
+            border-left-color: #d4dae7;
+        }
+        &--active,
+        &--active:hover {
+            cursor: default;
+            > * {
+                padding-top: 18px;
+                padding-bottom: 18px;
+                font-size: 24px;
+            }
+   
+            border-left-color: $blue-color;
+            background-color: #d4dae7;
+            font-weight: bolder;
+        }
+        padding: 0 10px;
+    }
+
+}

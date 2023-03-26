@@ -1,0 +1,8 @@
+.list-mobile-router {
+    @include breakpoint($breakpoint-medium) {
+        display: none;
+    }
+    line-height: 60px;
+    font-size: 22px;
+    width: 100%;
+}

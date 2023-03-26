@@ -1,0 +1,20 @@
+.content-with-list-router {
+    font-size: 0;
+    >* {
+        font-size: 1rem;
+        @include breakpoint($breakpoint-medium) {
+            display: inline-block;
+            vertical-align: top;
+        }
+        width: 100%;
+    }
+    @include breakpoint($breakpoint-medium) {
+        &__router{
+            width: 24%;
+        }
+        &__router+* {
+            padding-left: 20px;
+            width: 76%;
+        }
+    }
+}

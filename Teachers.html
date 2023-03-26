@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>Список новостей</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+    <div class="site-header">
+        <div class="site-header__container">
+            <div class="site-header__text-with-logo">
+                <div class="site-header__logo">
+                    <img src="./img/mgulogo4.png">
+                </div>
+                <div>
+                    <div class="site-header__text">
+                        <div style="width: 60px;">
+                            <div class="site-header__menu"></div>
+                        </div>
+
+                        <div>
+                            <div>Высшая школа (факультет) телевидения МГУ им. М. В. Ломоносова</div>
+                            <div class="site-header__slogan">Мы сделаем телевидение лучше!</div>
+                        </div>
+
+                    </div>
+
+
+                    <nav class="site-header__router">
+                        <span class="site-header__router-mobile">Меню</span>
+                        <a href="#">О факультете</a>
+                        <a href="#">Абитуриентам</a>
+                        <a href="#">Студентам</a>
+                        <a href="#">Контакты</a>
+                        <a href="#">Дополнительное образование</a>
+
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded",
+            function () {
+                var header = document.getElementsByClassName("site-header")[0];
+                var menubutton = header.getElementsByClassName("site-header__menu")[0];
+
+                function toggleMenu(header) {
+                    if (header.classList.contains("site-header--mobile-shown")) {
+                        header.classList.remove("site-header--mobile-shown");
+                    } else {
+                        header.classList.add("site-header--mobile-shown");
+
+                    }
+                }
+                menubutton.onclick = toggleMenu.bind(null, header);
+
+
+            })
+    </script>
+    <div class="site-content">
+        <div class="content-with-list-router">
+            <div class="content-with-list-router__router">
+                <select class="list-mobile-router">
+                    <option value=1>Подготовительные курсы</option>
+                    <option value=2>Бакалавриат</option>
+                    <option value=3>Магистратура</option>
+                    <option value=4 selected>Новости</option>
+                    <option value=5>Новости</option>
+                    <option value=6>Научная жизнь</option>
+                    <option value=7>Научная жизнь</option>
+                </select>
+                <nav class="list-router">
+                    <a class="list-router__item" href="#">
+                        <span>Подготовительные курсы</span>
+                    </a>
+                    <a class="list-router__item" href="#">
+                        <span>Бакалавриат</span>
+                    </a>
+                    <a class="list-router__item" href="#">
+                        <span>Магистратура</span>
+                    </a>
+                    <a class="list-router__item" href="#">
+                        <span>Выпускники</span>
+                    </a>
+                    <a class="list-router__item list-router__item--active" href="#">
+                        <span>Преподаватели</span>
+                    </a>
+                    <a class="list-router__item" href="#">
+                        <span>Научная жизнь</span>
+                    </a>
+                    <a class="list-router__item" href="#">
+                        <span>Научная жизнь</span>
+                    </a>
+                    <a class="list-router__item" href="#">
+                        <span>Публикации</span>
+                    </a>
+                    <a class="list-router__item" href="#">
+                        <span>Фотогалерея</span>
+                    </a>
+                    <a class="list-router__item" href="#">
+                        <span>Видеотека</span>
+                    </a>
+                    <a class="list-router__item" href="#">
+                        <span>Юн ТВ</span>
+                    </a>
+                    <a class="list-router__item" href="#">
+                        <span>Луч ТВ</span>
+                    </a>
+
+                </nav>
+            </div>
+            <div>
+                <nav class="breadcrumbs">
+                    <a href="#">Главная</a>
+                    <span>Новости</span>
+                </nav>
+                <h1>ПРЕПОДАВАТЕЛИ</h1>
+                <div class="teacher-card teacher-card--special">
+                    <div class="teacher-card__left">
+
+                        <div class="teacher-card__left-content">
+                            <div class="teacher-card__image-container">
+                                <img class="teacher-card__image" src="./img/dean.png">
+
+                            </div>
+                            <div class="teacher-cпреподавателard__name">Виталий Товиевич Третьяков</div>
+                            <div>Декан Высшей школы телевидения МГУ им.Ломоносова</div>
+                        </div>
+                    </div>
+                    <div class="teacher-card__right">
+                        <div class="teacher-card__header">Виталий Товиевич Третьяков</div>
+                        <div class="teacher-card__text">Декан Высшей школы телевидения МГУ им. М.В. Ломоносова Виталий Товиевич Третьяков
+                            <br>
+                            <br> Должности в ВШТ: декан, заведующий кафедрой телевидения и журналистики, главный редактор сборника
+                            «Научные и учебные тетради Высшей школы телевидения МГУ»</div>
+                        <div class="teacher-card__buttons">
+                            <div class="teacher-card__buttons-left">
+                                <div class="teacher-card__info-button">Подробнее</div>
+                            </div>
+                            <div class="teacher-card__buttons-right">
+                                <div class="teacher-card__button">Контакты</div>
+                                <div class="teacher-card__button">Расписание</div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="teacher-card">
+                    <div class="teacher-card__left">
+
+                        <div class="teacher-card__left-content">
+                            <div class="teacher-card__image-container">
+                                <img class="teacher-card__image" src="./img/dean.png">
+
+                            </div>
+                            <div class="teacher-card__name">Виталий Товиевич Третьяков</div>
+                            <div>Декан Высшей школы телевидения МГУ им.Ломоносова
+                                <br>
+                                <br> Должности в ВШТ: декан, заведующий кафедрой телевидения и журналистики, главный редактор
+                                сборника «Научные и учебные тетради Высшей школы телевидения МГУ»
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teacher-card__right">
+                        <div class="teacher-card__header">Виталий Товиевич Третьяков</div>
+                        <div class="teacher-card__text">Декан Высшей школы телевидения МГУ им. М.В. Ломоносова Виталий Товиевич Третьяков
+                            <br>
+                            <br> Должности в ВШТ: декан, заведующий кафедрой телевидения и журналистики, главный редактор сборника
+                            «Научные и учебные тетради Высшей школы телевидения МГУ»</div>
+                        <div class="teacher-card__buttons">
+                            <div class="teacher-card__buttons-left">
+                                <div class="teacher-card__info-button">Подробнее</div>
+                            </div>
+                            <div class="teacher-card__buttons-right">
+                                <div class="teacher-card__button">Контакты</div>
+                                <div class="teacher-card__button">Расписание</div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="teacher-card">
+                    <div class="teacher-card__left">
+
+                        <div class="teacher-card__left-content">
+                            <div class="teacher-card__image-container">
+                                <img class="teacher-card__image" src="./img/dean.png">
+
+                            </div>
+                            <div class="teacher-card__name">Виталий Товиевич Третьяков</div>
+                            <div>Декан Высшей школы телевидения МГУ им.Ломоносова
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teacher-card__right">
+                        <div class="teacher-card__header">Виталий Товиевич Третьяков</div>
+                        <div class="teacher-card__text">Декан Высшей школы телевидения МГУ им. М.В. Ломоносова Виталий Товиевич Третьяков
+                            <br>
+                            <br> Должности в ВШТ: декан, заведующий кафедрой телевидения и журналистики, главный редактор сборника
+                            «Научные и учебные тетради Высшей школы телевидения МГУ»
+                            <br>
+                            <br> Данный блок заполнен таким образом чтобы контент блока описания был выше блока с фотографией
+                            преподавателя.
+                            <br>
+                            <br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                            but also the leap into electronic typesetting, remaining essentially unchanged.</div>
+                        <div class="teacher-card__buttons">
+                            <div class="teacher-card__buttons-left">
+                                <div class="teacher-card__info-button">Подробнее</div>
+                            </div>
+                            <div class="teacher-card__buttons-right">
+                                <div class="teacher-card__button">Контакты</div>
+                                <div class="teacher-card__button">Расписание</div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <div class="site-footer__container">
+            <div class="site-footer__left">
+                <div class="site-footer__left-header">ЕСТЬ ВОПРОСЫ? </div>
+                <div>Вы можете задать их по телефону </div>
+                <div class="site-footer__phone-and-text">8 495 939-44-61 </div>
+                <div class="site-footer__phone-and-text">8 495 939-37-49 </div>
+                <div>Электронной почте </div>
+                <div class="site-footer__phone-and-text">hstv@bk.ru</div>
+            </div>
+            <div class="site-footer__right">
+                <nav class="site-footer__router">
+                    <a href="#">О факультете</a>
+                    <a href="#">Попечительский совет</a>
+                    <a href="#">Студентам</a>
+                    <a href="#">Преподавателям</a>
+                    <a href="#">Абитуриентам</a>
+                    <a href="#">Дополнительное образование</a>
+                    <a href="#">УМС "Телевидение"</a>
+                    <a href="#">Луч ТВ</a>
+                    <a href="#">Видеогалерея</a>
+                    <a href="#">Проекты</a>
+                </nav>
+                <div class="site-footer__footer">
+                    <div class="site-footer__footer-buttons">
+
+                        <a class="site-footer__footer-button site-footer__footer-button--active" href="#">Личный кабинет</a>
+                        <a class="site-footer__footer-button" href="#">Карта сайта</a>
+                    </div>
+                    <div class="site-footer__social-buttons">
+                        <a class="site-footer__social-button" href=#>
+                            <img src="./img/vk.png">
+                        </a>
+                        <a class="site-footer__social-button" href=#>
+                            <img src="./img/instagram.png">
+                        </a>
+                        <a class="site-footer__social-button" href=#>
+                            <img src="./img/facebook.png">
+                        </a>
+                        <a class="site-footer__social-button" href=#>
+                            <img src="./img/youtube.png">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
